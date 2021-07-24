@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background-color: blanchedalmond;
+        }
+        
+        .flex-col {
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+        
+        .cards-grp {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .main-of-pol {
+            margin: 20px;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .main-pol {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            padding: 10px;
+            color: #222;
+            cursor: pointer;
+            border: none;
+            text-align: left;
+            outline: none;
+            transition: 0.4s;
+            height: 100px;
+            width: 350px;
+            background-color: rgb(255, 255, 255);
+            z-index: 10;
+        }
+        
+        .panel {
+            background-color: transparent;
+            max-height: 0;
+            z-index: 10;
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+            transition: max-height 0.2s ease-out;
+        }
+        
+        .matt-pol {
+            width: 270px;
+            background-color: royalblue;
+        }
+        
+        .ima-pol {
+            height: 50px;
+            width: 50px;
+            background-color: rosybrown;
+        }
+        
+        .info-div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .info-sub {
+            height: 50px;
+            width: 350px;
+            margin: 20px;
+            background-color: aquamarine;
+        }
+        
+        .info-sub-one {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .info-sub-mat {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="info-div">
+        <div class="info-sub">
+            <div class="info-sub-one">
+                <div class="info-sub-mat">
+                    Lorem, ipsum dolor.
+                </div>
+
+                <div class="info-sub-logo">
+
+                </div>
+            </div>
+        </div>
+        <div class="info-sub"></div>
+        <div class="info-sub"></div>
+        <div class="info-sub"></div>
+    </div>
+
+    <div class="cards-grp">
+
+        <div class="main-of-pol">
+
+            <div>
+                <div class="main-pol">
+                    <div class="matt-pol">Education</div>
+                    <div class="ima-pol flex-col">Image</div>
+                </div>
+                <div class="panel">
+                    <div class="">
+                        <h1 class="">B.tech</h1>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main-of-pol">
+
+            <div>
+                <div class="main-pol">
+                    <div class="matt-pol">Education</div>
+                    <div class="ima-pol flex-col">Image</div>
+                </div>
+                <div class="panel">
+                    <div class="">
+                        <h1 class="">B.tech</h1>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="main-of-pol">
+
+            <div>
+                <div class="main-pol">
+                    <div class="matt-pol">Education</div>
+                    <div class="ima-pol flex-col">Image</div>
+                </div>
+                <div class="panel">
+                    <div class="">
+                        <h1 class="">B.tech</h1>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="main-of-pol">
+
+            <div>
+                <div class="main-pol">
+                    <div class="matt-pol">Education</div>
+                    <div class="ima-pol flex-col">Image</div>
+                </div>
+                <div class="panel">
+                    <div class="">
+                        <h1 class="">B.tech</h1>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="main-of-pol">
+
+            <div>
+                <div class="main-pol">
+                    <div class="matt-pol">Education</div>
+                    <div class="ima-pol flex-col">Image</div>
+                </div>
+                <div class="panel">
+                    <div class="">
+                        <h1 class="">B.tech</h1>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="main-of-pol">
+
+            <div>
+                <div class="main-pol">
+                    <div class="matt-pol">Education</div>
+                    <div class="ima-pol flex-col">Image</div>
+                </div>
+                <div class="panel">
+                    <div class="">
+                        <h1 class="">B.tech</h1>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="main-of-pol">
+
+            <div>
+                <div class="main-pol">
+                    <div class="matt-pol">Education</div>
+                    <div class="ima-pol flex-col">Image</div>
+                </div>
+                <div class="panel">
+                    <div class="">
+                        <h1 class="">B.tech</h1>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <script>
+            var acc = document.getElementsByClassName("main-pol");
+            var i;
+            var x;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+
+
+                });
+            }
+        </script>
+</body>
+
+</html>
